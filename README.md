@@ -18,6 +18,6 @@ Parameters (JSON)
 
 ## example
 
-   curl -X PUT -H 'Content-Type: application/json' -d '{"email": "new-email@example.com"}' \
-     "https://forum.example.com/users/USERNAME/preferences/email_confirmed?api_username=...&api_key=...
+`curl -X PUT -H 'Content-Type: application/json' -d '{"email": "new-email@example.com"}' \
+  "https://forum.example.com/users/USERNAME/preferences/email_confirmed?api_username=...&api_key=...`
 
