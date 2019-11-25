@@ -11,6 +11,7 @@ after_initialize do
   module ::AppendUsersEmailController
     def update_confirmed
       params.require(:email)
+      ensure_admin
       user = fetch_user_from_params
       user.email = params[:email]
       user.save!
